@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.light-source {
+    position: absolute;
+    cursor: move;
+}
+
+.box {
+    width: 208px;
+    height: 208px;
+    background: linear-gradient(224.05deg, #FFFFFF 5.38%, #FCFAFF 100%);
+    /*box-shadow: -20px 20px 40px rgba(131, 117, 171, 0.5);*/
+    border-radius: 24px;
+}
+
+.yep {
+    background: red;
+}
