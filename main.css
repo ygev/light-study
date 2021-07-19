@@ -20,8 +20,8 @@ body {
 .box {
     width: 208px;
     height: 208px;
-    /* background: linear-gradient(224.05deg, #FFFFFF 5.38%, #E4E7F3 100%); */
-    /* box-shadow: 0 0 40px rgba(117, 129, 171, 0.5); */
+    background: linear-gradient(224.05deg, #FFFFFF 100%, #E4E7F3 100%);
+    box-shadow: 0 0 0px rgba(117, 129, 171, 0.5);
     border-radius: 24px;
     /* outline: 1px solid red; */
 }
