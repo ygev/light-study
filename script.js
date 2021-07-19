@@ -51,12 +51,12 @@ function dragElement(sun) {
     var x = -(sunCenterX-boxCenterX)/2;
     var y = -(sunCenterY-boxCenterY)/2;
     var blur = (Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))*.75;
-    var deg; 
+    var deg = Math.atan2((sunCenterX-boxCenterX), sunCenterY-boxCenterY)*-180/Math.PI; 
     var boxShadow = "box-shadow:" +  x + "px " + y + "px " + blur + "px rgba(117, 129, 171, 0.5);";
-    var gradient = "background: linear-gradient(" + deg + "deg, #FFFFFF 50%%, #E4E7F3 100%); ";
-    var newStyles = boxShadow + gradient
+    var gradient = "background: linear-gradient(" + deg + "deg, #FFFFFF 50%, #E4E7F3 100%); ";
+    var newStyles = boxShadow + gradient;
 
-    console.log(blur)
+    console.log(gradient)
     // console.log("Sun offsets are " + sun.offsetTop +  " top and " + sun.offsetLeft + " left " + sun.offsetWidth + " width " + sun.offsetHeight + " height ")
     // console.log("Box offsets are " + box.offsetTop +  " top and " + box.offsetLeft + " left " + box.offsetWidth + " width " + box.offsetHeight + " height ")
     // console.log("Sun center is (" + sunCenterX + ", " + sunCenterY + ")" );
