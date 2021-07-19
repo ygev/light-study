@@ -58,7 +58,8 @@ function dragElement(sun) {
     var gradient = "background: linear-gradient(" + deg + "deg, #FFFFFF 50%, #E4E7F3 100%); ";
     var newStyles = boxShadow + gradient;
 
-    console.log(gradStart + ", " + gradEnd + " " + gradient)
+    // DEBUGGERS
+    // console.log(gradStart + ", " + gradEnd + " " + gradient)
     // console.log("Sun offsets are " + sun.offsetTop +  " top and " + sun.offsetLeft + " left " + sun.offsetWidth + " width " + sun.offsetHeight + " height ")
     // console.log("Box offsets are " + box.offsetTop +  " top and " + box.offsetLeft + " left " + box.offsetWidth + " width " + box.offsetHeight + " height ")
     // console.log("Sun center is (" + sunCenterX + ", " + sunCenterY + ")" );
